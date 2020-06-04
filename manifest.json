@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube auto pause",
+  "author": "Daniel van der Meijden",
+  "version": "1.0",
+
+  "description": "Use this when following a tutorial, where you are writing along. Use the shortcuts on your system to switch back and forth between youtube and whatever",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": ["index.js"]
+    }
+  ]
+}
